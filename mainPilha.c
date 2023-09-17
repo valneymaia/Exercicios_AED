@@ -6,7 +6,7 @@ int main() {
     int opcao;
 
     while (1) {
-        printf("\nMenu de OpÁıes:\n");
+        printf("\nMenu de Op√ß√µes:\n");
         printf("1. Inserir elemento\n");
         printf("2. Remover elemento\n");
         printf("3. Acessar topo\n");
@@ -14,7 +14,7 @@ int main() {
         printf("5. Imprimir pilha\n");
         printf("6. Tamanho da pilha\n");
         printf("0. Sair\n");
-        printf("Escolha uma opÁ„o: ");
+        printf("Escolha uma op√ß√£o: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
@@ -22,7 +22,7 @@ int main() {
                 struct aluno novoAluno;
                 printf("Digite o nome: ");
                 scanf(" %49[^\n]", novoAluno.nome);
-                printf("Digite a matrÌcula: ");
+                printf("Digite a matr√≠cula: ");
                 scanf("%d", &novoAluno.matricula);
                 inserir(pilha, novoAluno);
                 printf("Aluno inserido com sucesso!\n");
@@ -40,7 +40,7 @@ int main() {
                 struct aluno alunoDoTopo;
                 if (acessar(pilha, &alunoDoTopo)) {
                     printf("Aluno do topo:\n");
-                    printf("Nome: %s\nMatrÌcula: %d\n", alunoDoTopo.nome, alunoDoTopo.matricula);
+                    printf("Nome: %s\nMatr√≠cula: %d\n", alunoDoTopo.nome, alunoDoTopo.matricula);
                 } else {
                     printf("Erro ao acessar aluno do topo. Pilha vazia?\n");
                 }
@@ -48,9 +48,9 @@ int main() {
             }
             case 4: {
                 if (vazia(pilha)) {
-                    printf("A pilha est· vazia.\n");
+                    printf("A pilha est√° vazia.\n");
                 } else {
-                    printf("A pilha n„o est· vazia.\n");
+                    printf("A pilha n√£o est√° vazia.\n");
                 }
                 break;
             }
@@ -67,7 +67,7 @@ int main() {
                 printf("Encerrando o programa.\n");
                 return 0;
             default:
-                printf("OpÁ„o inv·lida. Tente novamente.\n");
+                printf("Op√ß√£o inv√°lida. Tente novamente.\n");
         }
     }
 
