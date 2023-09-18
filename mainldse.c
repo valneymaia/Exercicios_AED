@@ -14,7 +14,7 @@ int main() {
     int matricula, posicao;
 
     do {
-        printf("\nMenu de OpÁıes:\n");
+        printf("\nMenu de Op√ß√µes:\n");
         printf("1. Inserir aluno no inicio\n");
         printf("2. Inserir aluno no fim\n");
         printf("3. Inserir aluno ordenado por matricula\n");
@@ -67,15 +67,15 @@ int main() {
                 if (acessarIndice(ldse, posicao, &aluno))
                     printf("Aluno na posicao %d:\nMatricula: %d\nNome: %s\n", posicao, aluno.matricula, aluno.nome);
                 else
-                    printf("PosiÁ„o invalida.\n");
+                    printf("Posi√ß√£o invalida.\n");
                 break;
             case 8:
-                printf("Digite a matrÌcula do aluno a ser acessado: ");
+                printf("Digite a matr√≠cula do aluno a ser acessado: ");
                 scanf("%d", &matricula);
                 if (acessarValor(ldse, matricula, &aluno))
-                    printf("Aluno encontrado:\nMatrÌcula: %d\nNome: %s\n", aluno.matricula, aluno.nome);
+                    printf("Aluno encontrado:\nMatr√≠cula: %d\nNome: %s\n", aluno.matricula, aluno.nome);
                 else
-                    printf("Aluno n„o encontrado.\n");
+                    printf("Aluno n√£o encontrado.\n");
                 break;
             case 9:
                 imprimeLista(ldse);
@@ -84,7 +84,7 @@ int main() {
                 printf("Encerrando o programa.\n");
                 break;
             default:
-                printf("OpÁ„o inv·lida. Tente novamente.\n");
+                printf("Op√ß√£o inv√°lida. Tente novamente.\n");
         }
     } while (opcao != 0);
 
